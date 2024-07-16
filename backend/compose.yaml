@@ -1,0 +1,22 @@
+services:
+  server:
+    build:
+      context: .
+    env_file:
+      - .env.prod
+    ports:
+      - 3011:3011
+    networks:
+      - default
+  db:
+    container_name: db
+    restart: always
+    image: mongo
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - default
+volumes:
+   mongodb_data:

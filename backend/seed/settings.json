@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "66a63ac9fd250d0abbc28f12"
+  },
+  "key": "product-transform-plugins",
+  "value": [
+    "concatinator"
+  ]
+}]
